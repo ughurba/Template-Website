@@ -10,8 +10,6 @@
 .container {
     display: flex;
     justify-content: space-between;
-    
-   
 }
 .nav-soc-media-link{
     display: flex;
@@ -29,9 +27,6 @@
     font-family: "Open Sans", sans-serif;
     color: #576971;
     text-decoration: none;
-}
-.nav-bar {
-    
 }
 .nav-link {
     display: flex;
@@ -61,9 +56,6 @@
     margin-left: 30px; 
 }
 
-.fa-solid {
-    
-}
 .fa-angle-down {
    
     margin-left: 5px;
@@ -95,10 +87,7 @@
 .about-sub-link>a:hover{
     color: #0d6efd;
 }
-.header-soc-media {
-    
-    
-}
+
 .header-soc-media-links {
     color: #7b909a;
     margin-right: 8px;
@@ -107,4 +96,54 @@
 .header-soc-media-links:hover{
     color: #0d6efd;
     cursor: pointer;
+}
+
+/* section-hero*/
+
+
+.fon-hero{
+    background-image: url(./Снимок\ экрана\ 2022-05-06\ 140839.png);
+    background-repeat: round;
+ 
+}
+.hero-container{
+    display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   margin-top: 140px;
+}
+.hero-left-text-btn {
+    width: 630px;
+   
+}
+.hero-left-title {
+    margin: 0 0 20px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #364146;
+}
+h1,h2{
+    font-family: "Raleway", sans-serif;
+}
+.hero-left-bottom-title {
+    color: #576971;
+    margin-bottom: 30px;
+    font-size: 24px
+}
+.hero-left-button {
+}
+.hero-btn {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 18px 28px;
+    border-radius: 10px;
+    transition: 0.5s;
+    color: #fff;
+    background: #009cea;
+    text-decoration: none;
 }
