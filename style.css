@@ -226,29 +226,34 @@ h1,h2{
     margin-left: 30px;
     list-style: none;
     display: flex;
-    flex-direction: column;
- 
-    
+    flex-direction: column; 
 }
-.info-bottom-left-link>li{
+.info-bottom-link {
+    margin-top: 20px; 
+    border: none;
     margin-top: 20px;
     background-color: #fff;
     border-left:4px solid  #d0eaf8;
     padding:20px;
 }
-.info-bottom-link {
-    margin-top: 20px; 
-    text-decoration: none;
+.active{
+    transition: 0.10s;
+    border-color: #0d6efd;
     
 }
+.info-bottom-img.active{
+    display: block;
+}
+
 .info-bottom-link>h4{
     color: #576971;
     font-size: 18px;
     font-weight: 500;
-    transition: 0.3s;
+    transition: 0.5s;
     font-family: "Raleway", sans-serif;
     line-height: 1.2;
 }
+
 .info-bottom-link>p{
     font-size: 14.5px;
     margin-top: 7px;
@@ -263,10 +268,8 @@ h1,h2{
 .info-bottom-right-imgs{
     margin-right: 160px;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
 .info-bottom-right-imgs>img {
-   
-   
+   display: none;
 }
