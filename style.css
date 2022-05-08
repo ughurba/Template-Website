@@ -618,11 +618,6 @@ cursor: pointer;
 .team::before{
     background: rgba(255, 255, 255, 0.75);
 }
-
-
-.team-row {
-    
-}
 .team-flex{
     position: relative;
 }
@@ -699,12 +694,91 @@ cursor: pointer;
 .team-social>a:hover{
     color: #0d6efd;
 }
+/* Section-Testimonials */
 
-.fa-twitter {
+.testimonials {
+padding-top: 50px;
+padding-bottom: 50px;
+   
 }
-.fa-facebook {
+.testimonials-container {
+    overflow: hidden;
+    margin-left: 150px;
+    margin-right: 150px;
 }
-.fa-instagram {
+.testimonials-text {
 }
-.fa-linkedin {
+
+.swiper-container { 
+    position: relative;
+   
+}
+.swiper-wrapper {
+    display: flex;
+    margin-top: 50px;
+    min-width: 0;
+  
+   
+}
+.swiper-slide {
+    display: flex;
+    min-width: 0;
+  
+}
+.testimonial-item{
+min-height: 350px;
+
+}
+.testimonial-item>p {
+  
+    font-style: italic;
+    margin: 0 15px 0 15px;
+    padding: 20px 20px 60px 20px;
+    background: #f4f6f7;
+    position: relative;
+    border-radius: 6px;
+    z-index: 1;
+    font-size: 20px;
+}
+.testimonial-item>h4{
+    font-size: 14px;
+    color: #999;
+    margin: 0 0 0 45px;
+}
+.testimonial-item>h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px 45px;
+    color: #111;
+}
+
+.fa-quote-left {
+    display: inline-block;
+    left: -5px;
+    position: relative;
+    font-size: 20px;
+    color: #999;
+}
+.fa-quote-right {
+    color: #999;
+    font-size: 20px;
+}
+.testimonial-img {
+    width: 85px;
+    border-radius: 50%;
+    margin: -40px 0 0 40px;
+    position: relative;
+    z-index: 2;
+    border: 6px solid #fff;
+
+}
+.swiper-pagination>.swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #009cea;
+    background-color: #fff;
+    opacity: 1;
+}
+.swiper-pagination>.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color: #0d6efd;
 }

@@ -1,3 +1,32 @@
+new Swiper('.swiper-container', {
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+    },
+    loop:true,
+
+
+    autoplay:{
+      delay:2000,
+      stopOnLastSlide:false,
+      disableOnInteraction:false
+    },
+    speed:1000,
+
+    // effect:'fade',
+
+    // fadeEffect:{
+    //   crossFade:true,
+    // }
+
+});
+
+
+
+
+
+
 const tabsBtn = document.querySelectorAll(".info-bottom-link");
 const tabsItems = document.querySelectorAll(".info-bottom-img");
 
