@@ -13,12 +13,12 @@ tabFilter.forEach(function (item) {
     const tabImg = document.getElementsByClassName("portfolio-img-links-info");
 
     for (var i = 0; i < tabImg.length; i++) {
-      if (tabImg[i].classList.contains(tabAtributId)) { //class name  gore muqayise edir
-   
+      if (tabImg[i].classList.contains(tabAtributId)) {    //class name  gore muqayise edir
+     
+
         tabImg[i].classList.add("filter-active");
       } else {
         tabImg[i].classList.remove("filter-active");
-
       }
     }
 
@@ -26,9 +26,7 @@ tabFilter.forEach(function (item) {
       item.classList.remove("filter-active");
     });
 
-
     tabFilters.classList.add("filter-active");
-   
   });
 });
 
@@ -54,4 +52,5 @@ function onTabClick(item) {
   });
 }
 
+document.querySelector(".porfolio-filter-btn").click();
 document.querySelector(".info-bottom-link").click();

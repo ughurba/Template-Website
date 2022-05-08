@@ -131,8 +131,7 @@ h1,h2{
     margin-bottom: 30px;
     font-size: 24px
 }
-.hero-left-button {
-}
+
 .hero-btn {
     font-family: "Raleway", sans-serif;
     font-weight: 600;
@@ -239,6 +238,7 @@ h1,h2{
     animation-name: img-anime;
     animation-duration: 1s;
     animation-timing-function: linear;
+    
 }
 
 @keyframes img-anime {
@@ -298,9 +298,8 @@ h1,h2{
     padding-bottom: 50px;
     padding-top: 50px;
 }
-.services-text {
-}
-.services-title {
+
+.section-title {
     text-align: center;
     font-size: 32px;
     font-weight: 400;
@@ -310,7 +309,7 @@ h1,h2{
     color: #627680;
     
 }
-.services-paragraph {
+.section-paragraph {
     line-height:1.6;
     margin: 0 auto;
     width: 1236px;
@@ -356,8 +355,7 @@ h1,h2{
     transform: scale(1.1);
     border-color: blue;
 }
-.services-box {
-}
+
 .services-box-icon {
     margin-bottom: 20px;
     
@@ -382,9 +380,7 @@ h1,h2{
     color: #444444;
     font-family: 'Open Sans', sans-serif;
 }
-.fa-regular {
-    
-}
+
 .fa-file-lines {
     font-size: 40px;
     color: #60f5dc;
@@ -398,3 +394,317 @@ h1,h2{
     color: blue;
 }
 
+
+/*Section Portfolio*/
+.portfolio {
+    padding-top: 55px;
+    padding-bottom: 100px;
+}
+
+
+
+.porfolio-filter {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+.porfolio-filter>li:hover{
+    color: #009cea;
+
+}
+.porfolio-filter-btn.filter-active{
+    color: #0d6efd;
+}
+.porfolio-filter>li{
+    margin-right: 10px;
+    list-style: none;
+    
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #444444;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.portfolio-img-one-row {
+    display: flex;
+    justify-content: center;
+    
+}
+.portfolio-img-links-info.filter-active{
+    display: block;
+}
+.portfolio-img-links-info {
+    position: relative;  
+    margin-right: 20px; 
+    display: none;
+}
+.img-fluid:hover {
+    opacity: 0.5;
+    transition: 1s;
+
+}
+.portfolio-info {
+    position: absolute;
+    top: 12px;
+    left:190px;
+    opacity: 0;
+    
+}
+.portfolio-info>h4{
+    font-size: 20px;
+    color: #364146;
+    font-weight: 600;
+}
+.portfolio-info>p{
+    margin-top: 5px;
+    color: #364146;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.portfolio-img-links-info:hover .portfolio-info{
+  
+    display: block;
+    position: absolute;
+    top: 100px;
+    left:190px;
+    opacity: 1;
+    animation-name: info-anime;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+ 
+}
+@keyframes info-anime{
+ 
+    from{
+        top: 12px;
+    }to{
+        
+    top:100px;
+
+    }
+}
+
+
+.portfolio-img-links-info:hover .portfolio-links{
+    display: block;
+    position: absolute;
+    top: 180px;
+    left:172px;
+
+    opacity: 1;
+    animation-name: link-anime;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes link-anime{
+    from{
+        top: 260px;
+    }to{
+        
+    top:180px;
+
+    }
+}
+
+.portfolio-links {
+    position: absolute;
+    top: 260px;
+    left: 172px;
+    opacity: 0;
+    
+    
+}
+.portfolio-links>a{
+    color: #009cea;
+    margin: 0 2px;
+    font-size: 24px;
+    display: inline-block;
+    transition: 0.3s;
+    background: #eaf8ff;
+    border-radius: 50px;
+    line-height: 0;
+    padding: 7px;
+    text-decoration: none;
+}
+
+
+
+
+
+.fa-plus {
+    font-size: 20px;
+   
+}
+.fa-link {
+    font-size: 18px;
+}
+.portfolio-img-two-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Action */
+
+
+.action{
+    background-image: url(https://bootstrapmade.com/demo/templates/Scaffold/assets/img/cta-bg.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-attachment: fixed;
+}
+.action-text {
+    width: 800px;
+}
+.action-title {
+    color: #364146;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "Raleway",sans-serif;
+    margin-bottom: 18px;
+}
+.action-paragraph {
+    color: #576971;
+    font-size: 16px;
+    font-family: "Open Sans",sans-serif;
+    margin: 0px 0px 16px;
+}
+.action-button {
+margin-top: 35px;
+cursor: pointer;
+}
+.action-btn:hover{
+    background-color: blueviolet;
+}
+.action-btn {
+    color: #ffffff;
+    padding-right:30px;
+    padding-left: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #0d6efd;
+    border-radius: 3px;
+    font-size: 15px;
+    font-family: "Raleway",sans-serif;
+}
+
+
+/* section-team*/
+.team-text{
+    margin-bottom: 70px;
+}
+.team{
+    background-image: url(https://bootstrapmade.com/demo/templates/Scaffold/assets/img/team-bg.jpg);
+    padding-top: 60px;
+    padding-bottom: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.team::before{
+    background: rgba(255, 255, 255, 0.75);
+}
+
+
+.team-row {
+    
+}
+.team-flex{
+    position: relative;
+}
+.team-row-img-subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-imgs {
+    margin-left: 30px;
+   
+}
+.team-line{
+    width: 50px;
+    display: block;
+    border: 1px solid #B5c1c6;
+    border-radius: 3px;
+    background-color:#B5c1c6 ;
+    margin-bottom: 20px;
+}
+.team-info>h4{
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #364146;
+    position: relative;
+    
+    font-family: "Raleway", sans-serif;
+}
+.team-info>span{
+    margin-bottom: 10px;
+    font-style: italic;
+    display: block;
+    font-size: 14px;
+    color: #364146;
+    font-family: "Open Sans",sans-serif;
+}
+.team-mebmer:hover{
+    padding-bottom: 120px;
+    transition: 0.5s ease-in-out;
+    
+}
+.team-mebmer{
+    position: absolute;
+    left: 48px;
+    top: 360px;
+    width: 375px;
+    background: #fff;
+    padding: 20px 0;
+    color: #364146;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    max-height: 95px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+.team-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.team-social {
+    text-align: center;
+    position: relative;
+    top:10px;
+    right: 10px;
+}
+.team-social>a{
+    transition: color 0.3s;
+    color: #627680;
+    margin-left: 8px;
+    font-size: 17px;
+}
+.team-social>a:hover{
+    color: #0d6efd;
+}
+
+.fa-twitter {
+}
+.fa-facebook {
+}
+.fa-instagram {
+}
+.fa-linkedin {
+}
