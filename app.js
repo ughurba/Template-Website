@@ -59,6 +59,7 @@ tabFilter.forEach(function (item) {
   });
 });
 
+
 function onTabClick(item) {
   tabsBtn.forEach(function (item) {
     item.addEventListener("click", function () {
