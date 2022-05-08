@@ -791,8 +791,7 @@ min-height: 350px;
     padding-bottom: 50px;
     padding-top: 50px;
 }
-.container-clients {
-}
+
 .clients-text {
     margin-bottom: 30px;
 }
@@ -838,4 +837,135 @@ min-height: 350px;
     width: 1230px;
     margin-left: 145px;
     margin-right: 50px;
+}
+
+
+/* Pricing Section */
+
+.pricing {
+    background-color: #f7f8f9;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.container-pricing {
+}
+.pricing-text {
+    padding-bottom: 40px;
+}
+
+
+.pricing-rows-container {
+    
+}
+.pricing-flex {
+    display: flex;
+    justify-content: center;
+}
+.pricing-row>h3{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    padding: 20px 15px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #777777;
+    font-family: "Raleway", sans-serif;
+}
+.pricing-row>h4{
+    font-size: 36px;
+    color: #009cea;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+    position: relative;
+    
+}
+.pricing-row>h4>span{
+    color: #bababa;
+    font-size: 16px;
+    font-weight: 300;
+}
+.advanced{
+    width: 200px;
+    position: absolute;
+    top: 18px;
+    right: -68px;
+    transform: rotate(45deg);
+    z-index: 1;
+    font-size: 15px;
+    padding: 1px 0 3px 0;
+    background: #009cea;
+    color: #fff;
+}
+.pricing-row>ul{
+    padding: 0;
+    list-style: none;
+    color: #444444;
+    text-align: center;
+    line-height: 20px;
+    font-size: 17px;
+}
+.pricing-row>ul>li{
+    padding-top: 20px;
+}
+.na{
+    color: #ccc;
+    text-decoration: line-through;
+}
+
+.pricing-row.row-two{
+    background: #009cea;
+    border-color: #009cea;
+}
+.pricing-row.row-two h4 {
+    color: #fff;
+}
+.pricing-row.row-two>h4>span{
+    color:#fff ;
+}
+.pricing-row.row-two>ul{
+    color: #fff;
+}
+.pricing-row.row-two>.pricing-button>.pricing-btn{
+    background: #fff;
+    color: #009cea;
+}
+
+.pricing-row {
+    width: 330px;
+    height: 475px;
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #e9ecee;
+    margin-left: 25px;
+}
+sub{
+    position: absolute;
+    font-size: 25px;
+    left: 75px;
+}
+.sub-free{
+    position: absolute;
+    font-size: 25px;
+    left: 85px;
+}
+.pricing-button {
+    margin-top: 40px;
+}
+.pricing-btn {
+    background: #009cea;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 13px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
 }
