@@ -1003,7 +1003,6 @@ sub{
 .fag-list-in-text {
     display: block;
     position: relative;
-    font-family: #009cea;
     font-size: 21px;
     line-height: 24px;
     padding-left: 25px;
@@ -1013,16 +1012,30 @@ sub{
 }
 .show-btn-active.fag-list-text-in-paragraph{
     display: block;
-    transition: 2s;
+  animation-name: anime-fag;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
 }
+@keyframes anime-fag {
+    from{
+        transform: scale(0.9);
+     
+    }to{
+        transform: scale(1);
+        
+    }
+}
+
 .show-btn-active{
     color: #0d6efd;
+  
 }
 .show-btn-active.fa-chevron-down{
 display: none;
 }
 .show-btn-active.fa-chevron-up{
     display: block;
+    
 }
 .fa-chevron-up{
     display: none;
@@ -1035,52 +1048,146 @@ display: none;
     margin-bottom: 0;
     padding: 10px 0 0 25px;
     display: none;
+    transition: 0.5s;
+    line-height:1.5 ;
 }
 
 /* section contact*/
 .section-contact {
-}
-.contact-title {
-}
-.section-title {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: #f7f8f9;
 }
 .contact-map-container {
+    display: flex;
+    justify-content: center;
 }
 .map-block {
+    padding: 30px;
+    background: #fff;
+    width: 526px;
+    height: 600px;
+    border: 2px solid #e9ecee;
+    border-radius: 4px;
+}
+.location>h2{
+    padding: 0 0 0 60px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #364146;
+}
+.location>p{
+    padding: 0 0 10px 60px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #627680;
 }
 .location {
+    margin-bottom: 13px;
 }
-.icon-location {
+.icon-contact {
+    font-size: 20px;
+    color: #009cea;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #f2f4f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-right: 20px;
+    
 }
-.fa-solid {
+.location:hover .icon-contact{
+    background-color:#009cea; 
+    color:#f2f4f5;
+    transition: 1s;
 }
-.fa-location-dot {
-}
-.email {
-}
-.icon-email {
-}
-.fa-regular {
-}
-.fa-envelope {
-}
-.call {
-}
-.icon-call {
-}
+
 .fa-mobile-screen-button {
 }
-.form-block {
+iframe{
+    margin-top: 30px;
 }
+
+form{
+    width: 100%;
+    padding: 30px;
+    background: #fff;
+    border: 2px solid #e9ecee;
+    border-radius: 4px;
+    margin-left: 30px;
+}
+label{
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #444444;
+}
+input{
+    display: block;
+    width: 100%;
+    height: 44px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+   
+}
+input:focus{
+    outline-color: #0d6efd;
+}
+textarea:focus{
+    outline-color: #0d6efd;
+}
+textarea{
+    font-size: 20px;
+}
+.input-name {
+    width: 329px;
+}
+
+.input-email {
+    width: 329px;
+    
+}
+.input-text {
+    width: 682px;
+    border-color: #e9ecee;;
+}
+
 .form-name-email {
+    display: flex;
 }
-.row-name {
-}
+
 .row-email {
+    margin-left: 30px;
 }
 .form-subject {
+    margin-top: 20px;
 }
 .form-message {
+    margin-top: 20px;
 }
 .form-button {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.form-btn{
+    background: #009cea;
+    border: 0;
+    font-size: 18px;
+    font-family: 'Open Sans',sans-serif;
+    padding: 13px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+    margin-top:17px;
+    
 }
